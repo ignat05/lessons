@@ -1,10 +1,16 @@
-<form method ="post">
-логин
-<input type = "text" name = "login">
-пароль
-<input type = "password" name = "parol">
-<input type = "submit" value = "войти">
-</form>
+<?php
+require_once "header.php";
+?>
+<div id="loginform">
+    <form method ="post">
+        логин
+        <input type = "text" name = "login">
+        пароль
+        <input type = "password" name = "parol">
+        <input type = "submit" value = "войти">
+    </form>
+</div>
+
 
 <?php
 $l = $_POST['login'];
@@ -21,5 +27,7 @@ else
 {
 echo"ты кто такой?";
 }
+
+require_once "footer.php";
 
 

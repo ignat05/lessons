@@ -1,15 +1,4 @@
 <?php
-$name = "Андрей";
-echo "Здравтвуйте. Меня зовут ".$name.".<br>";
+require_once "header.php";
 
-for($i=1;$i<=20;$i++)
-{
-    echo $i."<br>";
-}
-
-$a = 5;
-$b = 33;
-
-$sum = $a+$b;
-
-echo "Сума чисел ".$a." и ".$b." равна ".$sum;
+require_once "footer.php";
