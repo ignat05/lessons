@@ -8,6 +8,8 @@
 </head>
 <body>
 
+<?php require_once "lib/functions.php"; ?>
+
 <div class="container">
     <div class="row  headerblock">
         <div class="col-md-3">
