@@ -37,3 +37,8 @@ a:hover
     margin-left:20px;
     transition-delay: 2ms;
 }
+
+th
+{
+    color: white;
+}

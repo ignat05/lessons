@@ -22,25 +22,41 @@ function pifagor($strok, $stolb)
     $tr = $strok;
     $td = $stolb;
 
-    echo "<table>";
+    echo "<table class=\"table table-bordered table-hover table-sm table-responsive\">";
     for ($i=1;$i<=$tr;$i++)
     {
         echo "<tr>";
         if($i==1)
         {
-            for ($k=1;$k<=$td;$k++)
-            {
-                echo "<td>{$k}</td>";
+            echo "<thead>";
+                echo "<tr>";
+                    for ($k=1;$k<=$td;$k++)
+                    {
+                        echo "<th class=\"bg-warning\" scope=\"col\">{$k}</th>";
+                    }
+                echo "</tr>";
+            echo "</thead>";
             }
-        }
         else
         {
-            for ($k=1;$k<=$td;$k++)
-            {
-                echo "<td>".$i*$k."</td>";
-            }
+            echo "<tbody>";
+                echo "<tr>";
+                    for ($k=1;$k<=$td;$k++)
+                    {
+                        if($k==1)
+                        {
+                            echo "<th class=\"bg-warning\" scope=\"row\">".$i*$k."</th>";
+                        }
+                        else
+                        {
+                            echo "<td>".$i*$k."</td>";
+                        }
+                    }
+                echo "</tr>";
+            echo "</tbody>";
         }
-        echo "</tr>";
+
+
     }
 
 }
