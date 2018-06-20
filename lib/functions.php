@@ -14,3 +14,33 @@ function kosti()
     echo "<br>";
     echo "Вам выпало число ".$sum;
 }
+
+// Таблица Пифагора
+
+function pifagor($strok, $stolb)
+{
+    $tr = $strok;
+    $td = $stolb;
+
+    echo "<table>";
+    for ($i=1;$i<=$tr;$i++)
+    {
+        echo "<tr>";
+        if($i==1)
+        {
+            for ($k=1;$k<=$td;$k++)
+            {
+                echo "<td>{$k}</td>";
+            }
+        }
+        else
+        {
+            for ($k=1;$k<=$td;$k++)
+            {
+                echo "<td>".$i*$k."</td>";
+            }
+        }
+        echo "</tr>";
+    }
+
+}
