@@ -1,11 +1,10 @@
 
         </div>
     </div>
-</div>
 
-<div class="row">
+<div class="row footer">
     <div class="col-md-12">
-        footer
+        Игнат и Саша <?=date(Y)?>
     </div>
 
 </div>

@@ -13,9 +13,21 @@ body
     background-color: aqua;
 }
 
+.footer
+{
+    text-align: center;
+}
+
+form
+{
+    width: 250px;
+}
+
 ul
 {
     list-style-type: none;
+    padding: 0;
+    margin-left: 5px;
 }
 
 a
@@ -35,7 +47,7 @@ a:hover
     color: white;
     padding-left: 20px;
     margin-left:20px;
-    transition-delay: 2ms;
+    transition-duration: 2ms;
 }
 
 th

@@ -10,13 +10,13 @@
 
 <?php require_once "lib/functions.php"; ?>
 
-<div class="container">
     <div class="row  headerblock">
         <div class="col-md-3">
             <img src="img/logo.png" width="150">
         </div>
         <div class="col-md-9">
             <h1>Личный сайт Игната</h1>
+            <p><?php today();?></p>
         </div>
     </div>
     <div class="row">
