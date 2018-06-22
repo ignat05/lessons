@@ -13,4 +13,5 @@ echo "Таблица Пифагора<br>";
 </form>
 <?php
 pifagor($_POST['tr'],$_POST['td']);
+echo "<br>";
 require_once "footer.php";
