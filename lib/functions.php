@@ -1,6 +1,16 @@
 <?php
 // Библиотека функций
 
+// Подключение и работа с БД
+function db($sql)
+{
+    $connection = mysqli_connect("localhost","ignat",12345,"dnevnik");
+    if($sql)
+    {
+
+    }
+}
+
 // Игра в кости
 function kosti()
 {
@@ -85,5 +95,8 @@ function today()
     $month["November"] = "ноября";
     $month["December"] = "декабря";
 
-    echo "Сегодня ".$day[date(l)].", ".date(j)." ".$month[date(F)]." ".date(Y)." года";
+    echo "Сегодня ".$day[date(l)].", ".date(j)." ".$month[date(F)]." ".date(Y)." года ".date("H:i:s");
+    header("refresh: 10;");
+
+
 }
