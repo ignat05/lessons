@@ -5,9 +5,13 @@
 function db($sql)
 {
     $connection = mysqli_connect("localhost","ignat",12345,"dnevnik");
+    mysqli_query($connection,"SET CHARSET utf8");
+
     if($sql)
     {
+        $result = mysqli_query($connection, $sql);
 
+        return $result;
     }
 }
 
@@ -96,7 +100,7 @@ function today()
     $month["December"] = "декабря";
 
     echo "Сегодня ".$day[date(l)].", ".date(j)." ".$month[date(F)]." ".date(Y)." года ".date("H:i:s");
-    header("refresh: 10;");
+    header("refresh: 300;");
 
 
 }
