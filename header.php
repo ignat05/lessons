@@ -15,7 +15,7 @@
             <img src="img/logo.png" width="150">
         </div>
         <div class="col-md-9">
-            <h1>Личный сайт Игната</h1>
+            <h1>Личный сайт Александра Дектярёва</h1>
             <p><?php today();?></p>
         </div>
     </div>
